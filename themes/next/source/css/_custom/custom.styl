@@ -13,18 +13,31 @@ body{
   background: $black; //修改为自己喜欢的颜色
 }
 
-// 鼠标样式
-//   * {
-//       cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"),auto!important
-//   }
-//   :active {
-//       cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"),auto!important
-//   }
-// 主页文章添加阴影效果
-.post {
-   margin-top: 0px;
-   margin-bottom: 60px;
-   padding: 25px;
-   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
-   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+// 添加阴影效果
+.content-wrap{
+  -webkit-box-shadow: 0 0 4px  #aaa;
+  -moz-box-shadow: 0 0 4px #aaa;
+}
+.header-inner{
+  -webkit-box-shadow: 0 0 4px  #aaa;
+  -moz-box-shadow: 0 0 4px #aaa;
+}
+.affix-top{
+  -webkit-box-shadow: 0 0 4px  #aaa;
+  -moz-box-shadow: 0 0 4px #aaa;
+}
+// .post {
+//    margin-top: 0px;
+//    margin-bottom: 60px;
+//    padding: 25px;
+//    -webkit-box-shadow: 0 0 5px  #777;
+//    -moz-box-shadow: 0 0 5px #777;
+// }
+
+.site-author-image {
+  border-radius: 100%;
+  padding: 2px;
+  border: 1px dashed #aaa;
+  animation: cycle 2s 0.5s forwards;
+  transition: border-radius 2s;
 }

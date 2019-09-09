@@ -39,16 +39,13 @@ keywords: "Hexo, NexT"  # 网站默认关键词
 rss: /atom.xml          # rss配置。false禁止；留空提供站点提供的；也可以自己指定
 
 footer:
-  since: 2019     # 网站建站年份，如果不配，采用当前年份
+  since: 2015-2019     # 网站建站年份，如果不配，采用当前年份
   icon: user       # 年份和版权声明之间的图标
   copyright:       # 版权声明。如为空，则取站点配置的`author`值。
   powered: false    # 显示Hexo的链接（Power by Hexo）
   theme:           # 在footer块中显示主题信息
     enable: false   # 显示主题信息    
     version: true  # 显示主题的版本。
-  # -------------------------------------------------------------
-  # 可以采用下面定制的文本
-  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
 
 # ---------------------------------------------------------------
 # SEO设置
@@ -77,7 +74,7 @@ menu:
   tags: /tags/ || tags                  # 标签页链接及其图标
   categories: /categories/ || th        # 分类页链接及其图标
   archives: /archives/ || archive        # 归档页及其图标
-  #schedule: /schedule/ || calendar
+  # schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   # commonweal: /404/ || heartbeat
 menu_icons:
@@ -123,11 +120,11 @@ social_icons:
 
 # 友情链接
 links_icon: link                              # 链接图标
-links_title: Links                            # 链接标签文字
+links_title: 友情链接                            # 链接标签文字
 links_layout: block                           # 链接样式
 #links_layout: inline
-#links:                                       # 一个一个的友情链接。用法为`标题： 链接`
-  #Title: http://example.com/
+links:                                       # 一个一个的友情链接。用法为`标题： 链接`
+  个人博客: https://zhaodi.top/
 
 # Sidebar Avatar                              # 侧边栏上个人头像图片。也支持是动态gif。
 avatar: /images/avatar.jpg
@@ -188,8 +185,8 @@ post_wordcount:                # 字数统计。依赖https://github.com/willin/
   item_text: true              # 是否显示文字
   wordcount: true             # 显示字数
   min2read: true              # 显示阅读时间
-  totalcount: false            # 显示总数
-  separated_meta: false         # 是否分开
+  totalcount: true            # 显示总数
+  separated_meta: true         # 是否分开
 
 #wechat_subscriber:            # 微信公众号订阅
   #enabled: true               # 是否启用
@@ -388,14 +385,14 @@ gitment:
 needmoreshare2:
   enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: true
+    enable: false
     options:
       iconStyle: box
       boxForm: horizontal
@@ -487,11 +484,11 @@ firestore:
   projectId: #required
   bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
-# Show PV/UV of the website/page with busuanzi.   访客数量统计
+# Show PV/UV of the website/page with busuanzi.   访客数量统计:废弃,改用post_wordcount
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: true
+  enable: false
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -501,7 +498,7 @@ busuanzi_count:
   site_pv_header: <i class="fa fa-eye"></i>
   site_pv_footer:
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
@@ -638,7 +635,7 @@ pace: true
 pace_theme: pace-theme-minimal
 
 # 是否开启网站动画
-use_motion: true
+use_motion: false
 
 
 # 动态特效：该特效打开的是3条线段追踪鼠标

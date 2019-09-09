@@ -10,6 +10,8 @@ keywords: C#,ASP.NET
 author: 赵迪
 language: zh-Hans
 timezone:
+sitemap:
+  path: sitemap.xml
 
 # URL
 ## # 网站的url，如果不在域名根目录，应包含子目录，且root要设置为`/子目录/`
@@ -31,7 +33,7 @@ skip_render:                # 忽略文档清单
   - CNAME
 
 # Writing
-new_post_name: :title.md    # 默认新建文档名，`:title`为变量，指文档标题，也可用其他变量
+new_post_name: :year/:month/:title.md    # 默认新建文档名，`:title`为变量，指文档标题，也可用其他变量
 default_layout: post        # 新建文档的默认布局
 titlecase: false            # 是否要把标题中的首字符大写
 external_link: true         # 是否要在新开tab中打开外链

@@ -128,11 +128,12 @@ live2d:
     use: live2d-widget-model-hijiki
   display:
     position: right
-    width: 200
-    height: 350
+    width: 260
+    height: 400
+    hOffset: -60
   mobile:
     show: true
-    scale: 0.5 # 移动设备上的缩放
+    scale: 0.2 # 移动设备上的缩放
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html  #定义部署

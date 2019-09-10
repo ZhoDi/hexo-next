@@ -200,7 +200,7 @@ post_wordcount:                # 字数统计。依赖https://github.com/willin/
 #bitcoin: /images/bitcoin.png       # 比特币打赏二维码
 
 post_copyright:
-  enable: false                     # 文档许可声明
+  enable: true                     # 文档许可声明
   license: CC BY-NC-SA 3.0          # 文档声明协议
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 

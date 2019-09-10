@@ -39,7 +39,7 @@ titlecase: false            # 是否要把标题中的首字符大写
 external_link: true         # 是否要在新开tab中打开外链
 filename_case: 0            # 文件名是否小写敏感
 render_drafts: false        # 是否渲染草稿
-post_asset_folder: false    # 是否启用资源文件夹。如启用，新建文档同时建立同名的资源文件夹
+post_asset_folder: true    # 是否启用资源文件夹。如启用，新建文档同时建立同名的资源文件夹
 relative_link: false        # 是否把站内资源的链接改为站内相对链接。建议关闭。
 future: true                # 文档中指定为未来时间创建
 highlight:
@@ -130,10 +130,10 @@ live2d:
     position: right
     width: 260
     height: 400
-    hOffset: -60
+    hOffset: -40
   mobile:
     show: true
-    scale: 0.2 # 移动设备上的缩放
+    scale: 0.3 # 移动设备上的缩放
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html  #定义部署

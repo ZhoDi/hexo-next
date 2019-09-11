@@ -100,12 +100,12 @@ scheme: Pisces
 # 用法: `Key: permalink || icon`
 # Key 是最终显示的标签，`||` 前是永久链接,`||` 后面是标签的FontAwesome图标，默认glob
 social:
-  GitHub: https://github.com/ZhoDi || github
+  # GitHub: https://github.com/ZhoDi || github
   微博: http://weibo.com/ZoDipro || weibo
   知乎: http://www.zhihu.com/people/ZoDipro || life-ring
   #E-Mail: mailto:yourname@gmail.com || envelope
   # Google: https://plus.google.com/ZoDipro || google
-  Twitter: https://twitter.com/ZoDipro || twitter
+  # Twitter: https://twitter.com/ZoDipro || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -124,7 +124,7 @@ links_title: 友情链接                            # 链接标签文字
 links_layout: block                           # 链接样式
 #links_layout: inline
 links:                                       # 一个一个的友情链接。用法为`标题： 链接`
-  个人博客: https://zhaodi.top/
+  Web导航: http://www.alloyteam.com/nav/
 
 # Sidebar Avatar                              # 侧边栏上个人头像图片。也支持是动态gif。
 avatar: /images/avatar.jpg
@@ -222,7 +222,7 @@ custom_logo:
   image:
 
 # 代码高亮主题。可选值normal | night | night eighties | night blue | night bright
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------

@@ -41,7 +41,7 @@ make && make install
 zlib 的作用是让Nginx支持gzip功能。
 
 ```bash
-# 下载 
+# 下载
  wget http://www.zlib.net/zlib-1.2.11.tar.gz
 # 解压
  tar -zxvf zlib-1.2.11.tar.gz
@@ -136,8 +136,8 @@ rtmp {
             hls on;    
             hls_path /usr/local/nginx/html/hls;    
             hls_fragment 5s;
-        }    
-    }    
+        }
+    }
 }
 ```
 ## 开启推送

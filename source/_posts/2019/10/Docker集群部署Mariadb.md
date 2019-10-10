@@ -4,6 +4,9 @@ comments: true
 date: 2019-10-10 14:03:28
 updated: 2019-10-10 14:03:28
 tags:
+  - Docker
+  - Mariadb
+  - Linux
 ---
 
 <blockquote class="blockquote-center">使用Docker模拟多个服务器,使用Mariadb进行集群部署</blockquote>

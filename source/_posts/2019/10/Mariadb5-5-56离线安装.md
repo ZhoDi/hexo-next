@@ -4,6 +4,8 @@ comments: true
 date: 2019-10-10 14:08:41
 updated: 2019-10-10 14:08:41
 tags:
+  - Mariadb
+  - Linux
 ---
 
 <blockquote class="blockquote-center">解决在没有网络情况下安装Mariadb,比如项目部署时</blockquote>

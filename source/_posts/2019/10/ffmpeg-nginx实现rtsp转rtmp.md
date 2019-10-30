@@ -20,64 +20,26 @@ tags:
 
 ## 安装Gcc编译环境
 
+### 在线安装 
 ```bash
-yum install gcc gcc-c++
+yum install gcc gcc-c++ zlib zlib-devel pcre pcre-devel openssl openssl-devel
 ```
+
+### 离线安装
+
+> 请移步另一篇博客
+
 > 包一律下载到/usr/local/src目录下
 
-## 安装pcre
+{% post_link 离线安装gcc %}
 
-pcre 的作用是让Nginx支持Rewrite功能。
-
-```bash
-# 下载
- wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
-# 解压 如果无法解压请下载到本地再上传到服务器
- tar -zxvf pcre-8.38.tar.gz
-# 进入目录
-cd pcre-8.38
-# 安装
-./configure
-make && make install
-```
-## 安装zlib
-
-zlib 的作用是让Nginx支持gzip功能。
-
-```bash
-# 下载
- wget http://www.zlib.net/zlib-1.2.11.tar.gz
-# 解压
- tar -zxvf zlib-1.2.11.tar.gz
-# 进入目录
-cd zlib-1.2.11
-# 安装
- ./configure
- make && make install
-```
-## 安装openssl
-openssl 的作用是让Nginx支持ssl功能。
-
-```bash
-# 下载 
- wget https://www.openssl.org/source/openssl-1.0.2n.tar.gz
-# 解压
- tar -zxvf openssl-1.0.2n.tar.gz
-# 进入目录
-cd openssl-1.0.2n
-# 安装
- ./config --prefix=/usr/local/openssl
- make && make install
-```
 
 ## 下载nginx-rtmp-module
-
 ```bash
 git clone https://github.com/arut/nginx-rtmp-module.git
 ```
 
 ## 安装Nginx
-
 ```bash
 # 下载 
 wget http://nginx.org/download/nginx-1.8.1.tar.gz

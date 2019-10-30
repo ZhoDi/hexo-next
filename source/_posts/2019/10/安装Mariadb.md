@@ -1,5 +1,5 @@
 ---
-title: Mariadb5.5.56离线安装
+title: 安装Mariadb
 comments: true
 date: 2019-10-10 14:08:41
 updated: 2019-10-10 14:08:41
@@ -8,11 +8,11 @@ tags:
   - Linux
 ---
 
-<blockquote class="blockquote-center">解决在没有网络情况下安装Mariadb,比如项目部署时</blockquote>
+<blockquote class="blockquote-center">安装Mariadb过程记录</blockquote>
 
 <!--more-->
 {% note info %}
-# Mariadb5.5.56离线安装
+# 一丶安装Mariadb 版本5.5.56
 {% endnote %}
 
 ## 离线安装
@@ -126,12 +126,11 @@ systemctl restart mariadb
 
 mysql> show variables like "%character%";show variables like "%collation%";
 ```
-
-  <p style="text-align:center;">-----------------------------------------安装完成-----------------------------------------</p>
+<p style="text-align:center;">-----------------------------------------安装完成-----------------------------------------</p>
   
 ---
-{% note info %}
-# 安装过程记录
+{% note warning %}
+# 离线安装安装过程记录
 {% endnote %}
 
 ### 如何获取离线包
@@ -209,8 +208,6 @@ mysql> show variables like "%character%";show variables like "%collation%";
   # 安装完成
   ```
 
-<!-- >
-
 > [mariadb官网离线安装10.x](https://mariadb.com/kb/en/library/mariadb-installation-version-10121-via-rpms-on-centos-7/)
 
 > [mariadb官网离线npm包](http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-5.5.56/yum/centos/7/x86_64/rpms/)
@@ -220,5 +217,3 @@ mysql> show variables like "%character%";show variables like "%collation%";
 > [获取离线包参考博客](https://blog.csdn.net/topswim/article/details/86578118)
 
 > [获取离线包参考博客](https://blog.csdn.net/GX_1_11_real/article/details/80694556)
-
-> -->

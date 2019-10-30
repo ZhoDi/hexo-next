@@ -4,6 +4,9 @@ comments: true
 date: 2019-10-30 10:26:46
 updated: 2019-10-30 10:26:46
 tags:
+  - Nginx
+  - Vue
+  - Vue部署
 ---
 
 <blockquote class="blockquote-center">安装Nginx过程,以及对Vue部署的配置</blockquote>
@@ -23,8 +26,7 @@ yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel
 
 ## 离线安装
 
-> 请移步另一篇博客
-{% post_link 离线安装gcc %}
+> 请移步另一篇博客： {% post_link 离线安装gcc %}
 
 
 {% note info %}

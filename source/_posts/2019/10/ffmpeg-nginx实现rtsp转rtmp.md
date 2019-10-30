@@ -27,12 +27,9 @@ yum install gcc gcc-c++ zlib zlib-devel pcre pcre-devel openssl openssl-devel
 
 ### 离线安装
 
-> 请移步另一篇博客
+> 请移步另一篇博客： {% post_link 离线安装gcc %}
 
 > 包一律下载到/usr/local/src目录下
-
-{% post_link 离线安装gcc %}
-
 
 ## 下载nginx-rtmp-module
 ```bash

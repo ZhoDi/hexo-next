@@ -4,6 +4,10 @@ comments: true
 date: 2019-10-30 11:08:00
 updated: 2019-10-30 11:08:00
 tags:
+  - gcc
+  - pcre
+  - zlib
+  - openssl
 ---
 
 <blockquote class="blockquote-center">在没有网络的情况下离线安装gcc</blockquote>
@@ -12,7 +16,7 @@ tags:
 
 
 {% note info %}
-# 安装gcc
+# 一丶安装gcc
 {% endnote %}
 
 我们在Linux上源码安装一些软件的时候,需要有gcc环境,如果联网可以直接yum安装,但是部署的时可能是没网络的
@@ -41,7 +45,7 @@ gcc-4.8.2-16.el7.x86_64.rpm
 
 
 {% note warning %}
-# 安装gcc
+# 二丶拓展安装一些模块
 {% endnote %}
 
 我们安装gcc一般是为了安装一些需要源码编译的模块或者软件,比如安装nginx,还要安装许多模块pcre、zlib、openssl这里我们就来拓展一下这些模块的安装

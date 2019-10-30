@@ -44,12 +44,12 @@ wget http://nginx.org/download/nginx-1.8.1.tar.gz
 tar -zxvf nginx-1.8.1.tar.gz
 # 进入目录
 cd nginx-1.8.1
-# 安装
+# 安装 使用在线安装pcre zlib openssl的话要将对应的--with-***去掉,也就是最后三条
  ./configure --prefix=/usr/local/nginx --add-module=/usr/local/src/nginx-rtmp-module --with-pcre=/usr/local/src/pcre-8.35 --with-zlib=/usr/local/src/zlib-1.2.11 --with-openssl=/usr/local/src/openssl-1.0.2n
  make && make install
 ```
 
-> **注意:**`--with-pcre=`和`--add-module=`后跟下载的源码路径
+> **注意:**`--with-***=`和`--add-module=`后跟下载的源码路径
 
 ## 安装yasm
 

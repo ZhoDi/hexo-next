@@ -14,7 +14,7 @@ tags:
 <!--more-->
 
 {% note info %}
-# 主从模式
+# 一丶主从模式
 {% endnote %}
 
 ## 前期准备

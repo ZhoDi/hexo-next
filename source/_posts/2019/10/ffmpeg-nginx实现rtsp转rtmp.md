@@ -15,7 +15,7 @@ tags:
 <!--more-->
 
 {% note info %}
-# 安装
+# 一丶安装
 {% endnote %}
 
 ## 安装Gcc编译环境
@@ -78,7 +78,7 @@ cd ffmpeg-4.2.1
 make && make install
 ```
 {% note info %}
-# 配置
+# 二丶配置
 {% endnote %}
 
 ## 修改nginx配置文件

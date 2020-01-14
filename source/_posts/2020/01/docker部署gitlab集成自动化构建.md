@@ -4,6 +4,10 @@ comments: true
 date: 2020-01-13 10:54:09
 updated: 2020-01-13 10:54:09
 tags:
+  - Docker
+  - Linux
+  - 运维
+  - gitlab
 ---
 
 <blockquote class="blockquote-center">使用gitlab搭建内网代码仓库</blockquote>

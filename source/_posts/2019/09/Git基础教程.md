@@ -190,7 +190,56 @@ git diff      #显然这些信息太过于模糊,所以还有`git diff`帮助你
 ```
 
 {% note info %}
-# 三丶常用命令
+# 三丶服务器搭建git仓库
+{% endnote %}
+
+## 1.安装
+
+
+## 2.配置
+
+1. **新建用户来运行git**
+```bash
+$ adduser git
+$ passwd git
+```
+
+2. **导入用户公钥**
+
+```bash
+# 公钥导入到/home/git/.ssh/authorized_keys文件里，一行一个。没有对应的文件自己建立
+# 不知道本地公钥的如何获取的上移二丶基础命令介绍的配置GitHub秘钥
+$ mkdir -p /home/git/.ssh
+$ touch authorized_keys
+```
+3. **新建仓库**
+
+```bash
+$ git init --bare sample.git
+```
+
+4. **修改权限**
+
+```bash
+$ chown -R git:git /home/git/.ssh
+$ chown -R git:git /home/git/sample.git
+```
+
+5. **设置git用户禁用shell登录**
+
+```bash
+$ vi /etc/passwd
+# git:x:1001:1001:,,,:/home/git:/bin/bash 改为 git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+# 只用修改git:后面的东西就行了
+```
+6. **克隆远程仓库**
+
+```bash
+$ git clone git@server:/srv/sample.git
+```
+
+{% note info %}
+# 四丶常用命令
 {% endnote %}
 
 ## 1. 配置

@@ -85,7 +85,7 @@ Git的作用就在这里了,它能够帮你管理,你只需要专注于工作。
 
 - 找到秘钥`C:\Users\zhaodi\.ssh\id_rsa.pub`用记事本打开复制
 
-- 找不到的执行`clip < ~/.ssh/id_rsa.pub`命令直接复制到剪贴板
+- 找不到的执行`type %userprofile%\.ssh\id_rsa.pub | clip`命令直接复制到剪贴板
 
 - 复制到[New SSH key](https://github.com/settings/keys) 详见下一步
 

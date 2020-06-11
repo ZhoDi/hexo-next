@@ -56,8 +56,6 @@ make && make install
 make && make install
 ```
 
-```bash
-```
 > **注意:**`--with-***=`后跟下载的源码地址，会自动安装编译，但也可以指定安装路径
 
 

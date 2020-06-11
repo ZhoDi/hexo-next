@@ -33,31 +33,32 @@ yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel
 # 二丶安装nginx
 {% endnote %}
 
-1. 下载nginx源码：[Nginx下载地址](https://nginx.org/en/download.html)
+1. 在线安装
 
 ```bash
 cd /usr/local
 mkdir nginx
 cd nginx
 wget -c http://nginx.org/download/nginx-1.16.1.tar.gz
-```
-
-2. 编译安装nginx
-
-```bash
-# 解压
 tar -zxvf nginx-1.16.1.tar.gz
 cd nginx-1.16.1
-
-# 编译安装在线安装依赖包直接编译
-./configure
-# 离线安装依赖包请指定模块源码
-./configure --prefix=/usr/local/nginx --with-pcre=/usr/local/src/pcre-8.35 --with-zlib=/usr/local/src/zlib-1.2.11 --with-openssl=/usr/local/src/openssl-1.0.2n
-
-make
-make install
+# 也可添加ssl模块：--with-http_ssl_module
+./configure --prefix=/usr/local/nginx 
+make && make install
 ```
-> **注意:**`--with-***=`后跟下载的源码路径,如果是离线安装的话
+
+2. 离线安装
+
+> **只有./configure --prefix=/usr/local/nginx 这一步不同其他按照上方**
+```bash
+# --with-pcre=/usr/local/src/pcre-8.35 --with-zlib=/usr/local/src/zlib-1.2.11 这俩默认就依赖就不加了
+./configure --prefix=/usr/local/nginx  --with-openssl=/usr/local/src/openssl-1.0.2n
+make && make install
+```
+
+```bash
+```
+> **注意:**`--with-***=`后跟下载的源码地址，会自动安装编译，但也可以指定安装路径
 
 
 3. 启动nginx
@@ -65,11 +66,12 @@ make install
 ```bash
 cd ../sbin
 # 启动
-./nginx 
-# 关闭
-./nginx -s stop
-# 重启
-./nginx -s reload
+/usr/local/nginx/sbin/nginx
+# 常用命令
+/usr/local/nginx/sbin/nginx -t
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+/usr/local/nginx/sbin/nginx -s stop
+/usr/local/nginx/sbin/nginx -s reload
 ```
 
 访问服务器ip查看 能看到welcome to nginx即部署成功

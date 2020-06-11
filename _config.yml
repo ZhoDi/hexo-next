@@ -139,6 +139,6 @@ live2d:
 ## Docs: https://hexo.io/docs/deployment.html  #定义部署
 deploy:
   type: git
-  # repo: git@github.com:ZhoDi/ZhoDi.github.io.git
-  repo: git@139.196.163.171:/home/git/ddblog.git
+  repo: git@github.com:ZhoDi/ZhoDi.github.io.git
+  # repo: git@139.196.163.171:/home/git/ddblog.git
   branch: master

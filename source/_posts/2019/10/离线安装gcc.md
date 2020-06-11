@@ -31,7 +31,7 @@ kernel-headers-3.10.0-123.el7.x86_64.rpm
 glibc-headers-2.17-55.el7.x86_64.rpm  
 glibc-devel-2.17-55.el7.x86_64.rpm  
 cpp-4.8.2-16.el7.x86_64.rpm  
-gcc-4.8.2-16.el7.x86_64.rpm  
+gcc-4.8.2-16.el7.x86_64.rpm
 
 2. 使用软件打包成tar包上传到服务器上
 
@@ -54,6 +54,7 @@ gcc-4.8.2-16.el7.x86_64.rpm
 ## 安装pcre
 
 > 通过wget一律下载到/usr/local/src目录下,方便寻找,比如安装nginx添加依赖模块就需要用到源码路径
+> nginx也可指定安装软件路径
 
 pcre 的作用是让Nginx支持Rewrite功能。
 

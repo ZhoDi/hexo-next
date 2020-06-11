@@ -1,5 +1,5 @@
 ---
-title: 安装Mariadb
+title: 离线安装Mariadb
 comments: true
 date: 2019-10-10 14:08:41
 updated: 2019-10-10 14:08:41
@@ -17,6 +17,8 @@ tags:
 
 ## 离线安装
 
+- [离线包下载](https://pan.baidu.com/s/1-B1t0TRRXoNUtRxz8z3DkA)  提取码: xgjv
+- 下载慢可以看下方安装记录自己去寻找离线包和环境
 ```bash
   # 解压离线rpm包
 

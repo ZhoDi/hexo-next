@@ -71,7 +71,11 @@ Git的作用就在这里了,它能够帮你管理,你只需要专注于工作。
 
 我们使用git都是要用到远端仓库的,但是我们通过`ssh`地址克隆远端仓库的时候会发现没有权限,所以我们先介绍一下如何在GitHub上配置秘钥
 
+
 ## 配置GitHub秘钥
+- 查看本地git账户信息
+- `git config user.email`
+- `git config user.email`
 
 - 修改本地git账户信息
  `git config --global user.name "[用户名]"`
@@ -90,6 +94,11 @@ Git的作用就在这里了,它能够帮你管理,你只需要专注于工作。
 - 复制到[New SSH key](https://github.com/settings/keys) 详见下一步
 
 - 打开github登录 > 点击右上角个人头像 > settings > SSH and GPG keys > New SSH key > 填写Title和Key > Add SSH key
+
+
+- 配置完成依然无法推送
+- 查看远端的路径是否已经改成git开头地址
+- 如果使用小乌堆推送，检查网络中的ssh客户端是否是git的`C:\Program Files\Git\usr\bin\ssh.exe`,如果不是改成你的路径
 
 ## 创建仓库
 

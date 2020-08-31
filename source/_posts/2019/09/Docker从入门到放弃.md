@@ -56,9 +56,11 @@ $ sudo yum install -y yum-utils \
 ```
 2、设置储存库
 ```bash
-$ sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
+#官方镜像
+#sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+#阿里云镜像(推荐)
+$ sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo 
 ```
 
 ## 安装Docker-ce版本（社区版）

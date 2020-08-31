@@ -16,8 +16,8 @@ sitemap:
 # URL
 ## # 网站的url，如果不在域名根目录，应包含子目录，且root要设置为`/子目录/`
 # url: http://www.zhaodi.top
-# url: http://139.196.163.171
-url: https://zhodi.github.io
+url: http://www.zhaodi.top:8080
+# url: https://zhodi.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -141,6 +141,10 @@ live2d:
 ## Docs: https://hexo.io/docs/deployment.html  #定义部署
 deploy:
   type: git
-  repo: git@github.com:ZhoDi/ZhoDi.github.io.git
+  repo: 
+    github:
+      git@github.com:ZhoDi/ZhoDi.github.io.git
+    aliyun:
+      git@139.196.163.171:/home/git/ddblog.git
   # repo: git@139.196.163.171:/home/git/ddblog.git
   branch: master

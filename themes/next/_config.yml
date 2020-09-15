@@ -313,11 +313,16 @@ changyan:
   appkey:
 
 
+# ！！！！！！！！！！！！！！！！！！！！！
+# 
+# 目前使用的评论系统，影响访问速度先关闭
+#
+# ！！！！！！！！！！！！！！！！！！！！！
 # 韩国来必力网站评论系统.https://valine.js.org
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: n9azODcIVT4i5J1ce53vNimz-gzGzoHsz
   appkey: 0Ue4QcxuqWoQc18IHo5iuPEl
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
@@ -382,6 +387,8 @@ gitment:
 #           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
+#
+# 网站分享功能 影响访问速度，先关闭
 needmoreshare2:
   enable: true
   postbottom:
@@ -706,7 +713,7 @@ vendors:
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
-  fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+  fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com

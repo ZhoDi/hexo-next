@@ -60,12 +60,9 @@ pcre 的作用是让Nginx支持Rewrite功能。
 
 ```bash
 # 下载
-wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
-# 解压 如果无法解压请下载到本地再上传到服务器
-tar -zxvf pcre-8.38.tar.gz
-# 进入目录
-cd pcre-8.38
-# 安装
+wget https://ftp.pcre.org/pub/pcre/pcre-8.35.tar.gz
+tar -zxvf pcre-8.35.tar.gz
+cd pcre-8.35
 ./configure
 make && make install
 ```
@@ -74,29 +71,21 @@ make && make install
 zlib 的作用是让Nginx支持gzip功能。
 
 ```bash
-# 下载
- wget http://www.zlib.net/zlib-1.2.11.tar.gz
-# 解压
- tar -zxvf zlib-1.2.11.tar.gz
-# 进入目录
+wget http://www.zlib.net/zlib-1.2.11.tar.gz
+tar -zxvf zlib-1.2.11.tar.gz
 cd zlib-1.2.11
-# 安装
- ./configure
- make && make install
+./configure
+make && make install
 ```
 ## 安装openssl
 openssl 的作用是让Nginx支持ssl功能。
 
 ```bash
-# 下载 
- wget https://www.openssl.org/source/openssl-1.0.2n.tar.gz
-# 解压
- tar -zxvf openssl-1.0.2n.tar.gz
-# 进入目录
+wget https://www.openssl.org/source/openssl-1.0.2n.tar.gz
+tar -zxvf openssl-1.0.2n.tar.gz
 cd openssl-1.0.2n
-# 安装
- ./config --prefix=/usr/local/openssl
- make && make install
+./config
+make && make install
 ```
 
 

@@ -6,9 +6,10 @@ updated: 2019-10-30 16:04:53
 tags:
   - Redis
   - Linux
+  - Linux安装Redis
 ---
 
-<blockquote class="blockquote-center">Linux安装Redis过程记录</blockquote>
+<blockquote class="blockquote-center">Linux安装Redis</blockquote>
 
 <!--more-->
 

@@ -196,7 +196,7 @@ docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 
 ### 7、停止、启动、查看容器
 ```bash
-docker top CONTAINER [ps OPTIONS]
+docker stop CONTAINER [ps OPTIONS]
 docker start [OPTIONS] CONTAINER [CONTAINER...]
 docker stats [OPTIONS] [CONTAINER...]
 ```
@@ -205,6 +205,9 @@ docker stats [OPTIONS] [CONTAINER...]
 
 ```bash
 docker rm CONTAINER
+
+# 停止包含redis关键字的所有容器
+docker rm `docker ps -a| grep redis | awk '{print $1}' `
 ```
 |名称|描述|
 |:---|:---|

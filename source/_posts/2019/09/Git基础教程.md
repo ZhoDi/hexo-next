@@ -5,6 +5,9 @@ updated: 2019-09-10 17:53:07
 comments: true
 tags: 
   - git
+  - git命令
+  - git基础
+  - git
 ---
 
 <blockquote class="blockquote-center">Git基础入门, 主要介绍一些常用命令</blockquote>
@@ -99,6 +102,22 @@ Git的作用就在这里了,它能够帮你管理,你只需要专注于工作。
 - 配置完成依然无法推送
 - 查看远端的路径是否已经改成git开头地址
 - 如果使用小乌堆推送，检查网络中的ssh客户端是否是git的`C:\Program Files\Git\usr\bin\ssh.exe`,如果不是改成你的路径
+
+## 配置git代理
+
+```bash
+# 设置
+git config --global http.proxy socks5://127.0.0.1:10809
+git config --global https.proxy socks5://127.0.0.1:10809
+
+# 移除
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+# 查看
+git config --global --get http.proxy
+git config --global --get https.proxy
+```
 
 ## 创建仓库
 

@@ -8,6 +8,7 @@ tags:
   - ffmpeg
   - rtsp
   - rtmp
+  - rtsp转rtmp
 ---
 
 <blockquote class="blockquote-center">ffmpeg+nginx实现rtsp转rtmp</blockquote>

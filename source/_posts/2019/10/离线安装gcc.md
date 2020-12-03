@@ -4,13 +4,14 @@ comments: true
 date: 2019-10-30 11:08:00
 updated: 2019-10-30 11:08:00
 tags:
-  - gcc
-  - pcre
-  - zlib
-  - openssl
+  - 安装gcc
+  - 安装pcre
+  - 安装zlib
+  - 安装openssl
+  - 离线安装gcc
 ---
 
-<blockquote class="blockquote-center">在没有网络的情况下离线安装gcc</blockquote>
+<blockquote class="blockquote-center">离线安装gcc</blockquote>
 
 <!--more-->
 

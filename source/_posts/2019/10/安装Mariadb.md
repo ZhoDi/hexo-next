@@ -6,9 +6,11 @@ updated: 2019-10-10 14:08:41
 tags:
   - Mariadb
   - Linux
+  - 安装Mariadb
+  - 离线安装Mariadb
 ---
 
-<blockquote class="blockquote-center">安装Mariadb过程记录</blockquote>
+<blockquote class="blockquote-center">安装Mariadb</blockquote>
 
 <!--more-->
 {% note info %}

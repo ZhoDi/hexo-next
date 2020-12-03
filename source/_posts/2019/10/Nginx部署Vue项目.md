@@ -42,24 +42,12 @@ cd nginx
 wget -c http://nginx.org/download/nginx-1.16.1.tar.gz
 tar -zxvf nginx-1.16.1.tar.gz
 cd nginx-1.16.1
-# 也可添加ssl模块：--with-http_ssl_module
-./configure --prefix=/usr/local/nginx 
+# --with-http_ssl_module 让nginx支持ssl
+./configure --prefix=/usr/local/nginx  --with-http_ssl_module
 make && make install
 ```
 
-2. 离线安装
-
-> **只有./configure --prefix=/usr/local/nginx 这一步不同其他按照上方**
-```bash
-# --with-pcre=/usr/local/src/pcre-8.35 --with-zlib=/usr/local/src/zlib-1.2.11 这俩默认就依赖就不加了
-./configure --prefix=/usr/local/nginx  --with-openssl=/usr/local/src/openssl-1.0.2n
-make && make install
-```
-
-> **注意:**`--with-***=`后跟下载的源码地址，会自动安装编译，但也可以指定安装路径
-
-
-3. 启动nginx
+2. 启动nginx
 
 ```bash
 cd ../sbin

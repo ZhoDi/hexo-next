@@ -7,9 +7,10 @@ tags:
   - Docker
   - Mariadb
   - Linux
+  - Docker集群部署Mariadb
 ---
 
-<blockquote class="blockquote-center">使用Docker模拟多个服务器,使用Mariadb进行集群部署</blockquote>
+<blockquote class="blockquote-center">Docker集群部署Mariadb</blockquote>
 
 <!--more-->
 

@@ -35,7 +35,7 @@ favicon:
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
-keywords: "Hexo, NexT"  # 网站默认关键词
+keywords: "博客,Linux,C#,Docker,git,java"  # 网站默认关键词
 rss: /atom.xml          # rss配置。false禁止；留空提供站点提供的；也可以自己指定
 
 footer:
@@ -53,11 +53,11 @@ footer:
 
 
 canonical: true  # 标记为权威网站，有利于SEO搜索。如果打开该标签，务必在站点配置中设置url。
-seo: false       #更改站点副标题(将是主要站点描述)和所有post/page标题上的标题层次结构，以便更好地优化seo。
+seo: true       #更改站点副标题(将是主要站点描述)和所有post/page标题上的标题层次结构，以便更好地优化seo。
 
 # 如果index_with_subtitle为true，则在主页标题中增加subtitle。
 # subtitle: Subtitle # 此处也可以覆写，它会替代站点配置文件中的内容
-index_with_subtitle: false
+index_with_subtitle: true
 
 
 # ---------------------------------------------------------------
@@ -88,8 +88,8 @@ menu_icons:
 # Schemes
 #scheme: Muse
 #scheme: Mist
-scheme: Pisces
-#scheme: Gemini
+# scheme: Pisces
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -602,7 +602,7 @@ tabs:
 # Use velocity to animate everything.
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # Transition variants:
     # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
@@ -612,11 +612,11 @@ motion:
     # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
     # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
     post_block: fadeIn
-    post_header: slideDownIn
-    post_body: slideDownIn
-    coll_header: slideLeftIn
+    post_header: expandIn
+    post_body: fadeIn
+    coll_header: expandIn
     # Only for Pisces | Gemini.
-    sidebar: slideUpIn
+    sidebar: expandIn
 
 # Fancybox
 fancybox: true
@@ -642,7 +642,7 @@ pace: true
 pace_theme: pace-theme-minimal
 
 # 是否开启网站动画
-use_motion: false
+use_motion: flase
 
 
 # 动态特效：该特效打开的是3条线段追踪鼠标

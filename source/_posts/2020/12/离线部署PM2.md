@@ -108,3 +108,56 @@ pm2 ls
 ![node成功输出](image-20201203180642393.png)
 
 ![pm2成功输出](image-20201203180702553.png)
+
+# 四、常用命令
+
+| 命令                                       | 说明                   |
+| :----------------------------------------- | :--------------------- |
+| pm2 startup                                | 设置pm2开机自启动      |
+| pm2 unstartup                              | 移除pm2开机自启动      |
+| pm2 save                                   | 保存当前进程开机自启动 |
+| pm2 start <进程启动命令> [--name <进程名>] | 启动应用程序           |
+| pm2 list                                   | 显示所有进程状态       |
+| pm2 monit                                  | 监控进程               |
+| pm2 logs [进程id或名字]                    | 显示进程日志           |
+| pm2 stop [all]                             | 停止[所有]进程         |
+| pm2 restart [all]                          | 重启[所有]进程         |
+| pm2 delete [<进程名或者id>,all]            | 删除指定[所有]进程     |
+| pm2 info [进程id或名字]                    | 查看应用程序信息       |
+
+> 配置文件
+
+```json
+{
+    "apps": [{
+        "name": "BaoWu",
+        "script": "/usr/bin/java",
+        "watch": true,
+        "ignore-watch":[
+            "wwwroot"
+        ],
+        "args": [
+            "-jar",
+            "/home/visible/Project/BaoWu/baowu-zwt.jar"
+        ],
+        "exec_interpreter": "",
+        "out_file": "/dev/null",
+        "error_file": "/dev/null",
+        "exec_mode": "fork"
+    },{
+        "name": "CloudWatchUniversal",
+        "script": "/usr/bin/java",
+        "watch": true,
+        "ignore-watch":[
+            "wwwroot"
+        ],
+        "args": [
+            "-jar",
+            "/home/visible/Project/universalCloudWatch/cloudwatch-universal-1.0-SNAPSHOT.jar"
+        ],
+        "exec_interpreter": "",
+        "exec_mode": "fork"
+    }]
+}
+```
+

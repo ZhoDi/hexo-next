@@ -15,12 +15,11 @@ tags:
 
 <!--more-->
 
-
 {% note info %}
 # 一丶安装gcc
 {% endnote %}
 
-我们在Linux上源码安装一些软件的时候,需要有gcc环境,如果联网可以直接yum安装,但是部署的时可能是没网络的
+我们在Linux上源码安装一些软件的时候,需要有gcc环境,如果联网可以直接yum安装,但是部署的时可能是没网络的.
 
  [网易离线包地址](http://mirrors.163.com/centos/6/os/x86_64/Packages/)  
  [阿里离线包地址](http://mirrors.aliyun.com/centos/7/os/x86_64/Packages/)

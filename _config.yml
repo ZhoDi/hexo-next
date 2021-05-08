@@ -16,7 +16,7 @@ sitemap:
 # URL
 ## # 网站的url，如果不在域名根目录，应包含子目录，且root要设置为`/子目录/`
 # url: http://www.zhaodi.top
-url: http://www.zhaodi.top:8080
+url: https://www.zhaodi.top
 # url: https://zhodi.github.io
 root: /
 permalink: :year/:month/:day/:title/
